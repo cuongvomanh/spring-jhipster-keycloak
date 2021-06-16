@@ -100,6 +100,7 @@ spring:
       dev:
         - dev
         - api-docs
+        - no-liquibase
         # Uncomment to activate TLS for the dev profile
         #- tls
   jmx:
@@ -153,7 +154,7 @@ spring:
       client:
         provider:
           oidc:
-            issuer-uri: http://localhost:9080/auth/realms/jhipster
+            issuer-uri: http://localhost:8080/auth/realms/jhipster
         registration:
           oidc:
             client-id: internal
